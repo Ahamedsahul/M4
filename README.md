@@ -213,13 +213,13 @@ Step 8: End the program.
 ~~~
 #include <stdio.h>
 
-int main() {
+int main()
+{
     char c1[100], c2[100];
     int flag = 0, i = 0;
 
     printf("Enter the first string: ");
     scanf("%[^\n]", c1);
-    getchar(); // To consume the newline character left by scanf
 
     printf("Enter the second string: ");
     scanf("%s", c2);
@@ -232,7 +232,7 @@ int main() {
         i++;
     }
 
-    if (flag == 0 && c1[i] == c2[i]) {
+    if (flag == 0) {
         printf("Strings are same\n");
     } else {
         printf("Strings are not same\n");
